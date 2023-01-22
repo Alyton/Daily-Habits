@@ -1,0 +1,86 @@
+ - Box Model - todos os elementos html é considerado uma caixa, onde todos têm conteúdo.
+
+ - display - disposição/visualização dos elementos dentro de um elemento
+
+ - tipo flex - flexível: coloca um elemento abaixo do outro e elementos dentro de um elemento, é posto um ao lado do outro.
+ 
+ -- os elementos ficam flexíveis e disponibiliza algumas propriedades de alinhamento 
+
+ - imput - só tem atributos para configurar/sem conteúdo
+
+ -- input do tipo 'checkbox', para receber algumas manipulações, precisa que sua 'appearance' esteja em 'none'.
+
+ -- precisa-se também adicionar o '--webkit-appearance', para que alguns navegadores apliquem as propriedades.
+
+ -- os inputs, geralmente, ficam dentro de tags 'form'
+
+ ----------------------------------------------------
+
+  - Variável - uma caixa onde guarda-se dados a serem usados mais tarde
+
+  - Dados - textos, números, booleanos, estruturadoos...
+
+  -- const - atribuido um valor, já mais será reatribuido
+
+  - Função - agrupa e reutiliza código
+
+  - Objetos: Atributos - propriedades de objeto / Métodos: funcionalidades de um objeto
+
+  -- nome da propriedade, valor da propriedade = atributo 
+
+  -- toda propriedade que receber uma Função, será um método
+
+  - Objeto: const nome = {} --> objeto vazio
+
+  - DOM - Document Objetc Model - o documento HTML transformam-se em ojetos Javascript
+
+  -- tipo: document.body.style.backgroundColor = 'white' - isso mudará a cor de fundo da página através do css
+
+  -- document.querySelector("input").click() - vai pega ro primeiro 'input' do html e dar um click através do javascript
+
+  - Array - estrutura de dados escrita por [], dados dentro dos colchetes.
+
+  -- composto por muitos valores/agrupamento de dados complexos
+
+  -----------------------------------------------------
+
+  - new Date() - Biblioteca que existente dentro do JS
+
+  -- new Date() - criará uma nova data
+   | por padrão, a data vem no formato MM-DD-YY
+  -- new Date() - mostrará a data e hora no
+     padrão EUA e na forma completa
+     ex.: seg Feb 21 2023 'hora' 'fuso'...
+  -- new Date().toLOcaleDteString('pt-br')
+     a data virá no formato BR DD-MM-YY
+
+    |.slice() 'recorte' - usado em datas para recortas caracteres
+      - Sem .slice()
+    || new Date().toLOcaleDteString('pt-br')
+     | '21/01/2023'
+      - Com .slice(posições de recorte) 
+    || new Date().toLOcaleDteString('pt-br').slice(0, -5)
+        '21/01'
+
+---------------------------------------------------------
+  - localStoge - objeto que guarda informações na memória do Browser
+
+  -- Quando usado em um determinada navegador, as informações ficam salvas fazendo com que o usuário fecheo-o sem preocupação de perder seu(s) progresso(s)/dados
+
+    || Para que as informações fiquem salvas, deve-se itulizar uma funcionalidade: .setItem['nome da chave/qualquer nome', dados da aplicação]
+    |localStoge.setItem['DayleProject@habits', JSON.stringfy(nlwSetup.data)]
+
+    *O nlwSetup.data é um objeto, o 'JSON.stringfy' transforma em 'string'*
+
+    * JSON.stringfy() é uma fnction*
+
+    ||  nlwSetup.data - responsável por guardar os dados no navegador (da biblioteca)
+
+    || localStoge.getItem('chave usada no setItem')
+    
+    *O JSON.stringfy transformou os itens em strings.
+      para o .getItem, temos que transforma em objetos
+      através do JSON.parse()
+      || JSON.parse(localStoge.getItem('DayleProject@habits'))
+
+      * {} - objeto vazio *

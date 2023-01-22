@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Daily Habits</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="Logomarca do site Habits" />
+
+      <button>
+        <img src="./assets/plus.svg" alt="ícone sinal de mais, roxo" />
+        <div>Registrar meu dia</div>
+      </button>
+    </header>
+
+    <form>
+      <div class="habits">
+        <div class="habit" data-name="programming">
+          <div class="text-place">Programming studies 👨‍💻</div>
+        </div>
+        <div class="habit" data-name="readBook">
+          <div class="text-place">Read a Book 📚</div>
+        </div>
+        <div class="habit" data-name="drinkWater">
+          <div class="text-place">Drink Water 💧</div>
+        </div>
+        <div class="habit" data-name="food">
+          <div class="text-place">Food 🍎🍇</div>
+        </div>
+        <div class="habit" data-name="physicalExercises">
+          <div class="text-place">Physical exercises 💪</div>
+        </div>
+      </div>
+
+      <div class="days"></div>
+    </form>
+
+    <!-- Biblioteca -->
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
