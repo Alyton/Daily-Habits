@@ -5,18 +5,8 @@
 }
 
 :root {
-  --bg-color: linear-gradient(
-    246.53deg,
-    #1f104b -3.48%,
-    #210830 38.77%,
-    #22021b 97.7%
-  );
-  --bg-header: linear-gradient(
-    256.53deg,
-    #1f104b -3.48%,
-    #210830 38.77%,
-    #220423 97.7%
-  );
+  --bg-color: #22031b;
+  --bg-header: #22031b;
   --color-white: #fff;
   --text-dates-color: #a1a1aa;
   --border-gradient: linear-gradient(
@@ -27,7 +17,7 @@
 }
 
 body {
-  background-image: var(--bg-color);
+  background-color: var(--bg-color);
   color: var(--color-white);
   /* height: 100vh; */
 }
@@ -41,7 +31,7 @@ header {
 
   position: fixed;
   width: 100%;
-  background-image: var(--bg-header);
+  background-color: var(--bg-header);
 }
 
 button {
@@ -60,7 +50,7 @@ button {
   border-radius: 10px;
   background-color: transparent;
   
-  border: 2px solid #200e42;
+  border: 3px solid #700D85;
   /* border-image: var(--border-gradient); */
 
   transition: all 0.3s;
@@ -69,9 +59,11 @@ button {
 button:hover {
   background: #4c0251;
   cursor: pointer;
+  border: 3px solid #4c0251;
   --webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
 
 form {
   display: flex;
@@ -176,3 +168,5 @@ input:checked {
     display: none;
   }
 }
+
+
