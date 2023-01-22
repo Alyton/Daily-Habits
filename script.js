@@ -11,7 +11,7 @@ form.addEventListener("change", save)
 function add() {
   // adciona a data atual
   const today = new Date().toLocaleDateString("pt-br").slice(0, -5)
-  // const today = "23/01"
+  // const today = "24/01"
   const dayExist = nlwSetup.dayExists(today)
 
   if (dayExist) {

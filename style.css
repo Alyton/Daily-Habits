@@ -49,8 +49,8 @@ button {
   color: var(--color-white);
   border-radius: 10px;
   background-color: transparent;
-  
-  border: 3px solid #700D85;
+
+  border: 3px solid #700d85;
   /* border-image: var(--border-gradient); */
 
   transition: all 0.3s;
@@ -63,7 +63,6 @@ button:hover {
   --webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 
 form {
   display: flex;
@@ -162,11 +161,84 @@ input:checked {
   border: 2px solid #cd01c0;
 }
 
+/* popup do button */
+.popup-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* display: none; */
+}
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Inter";
+  text-align: center;
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 30px;
+  background: #500041;
+  position: relative;
+}
+
+.popup a {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  background: #820079;
+  border-radius: 30px;
+  width: 400px;
+  height: 45px;
+
+  margin: auto;
+  margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-close{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50px;
+  color: #c0bec0;
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  /* background-color: black; */
+  width: 25px;
+  height: 25px;
+  border: 2px solid #820079;
+
+  transition: all .3s;
+}
+
+.popup-close:hover{
+  --webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  color: rgb(112, 110, 110);
+}
+
 /* responsividade @ rule */
 @media (max-width: 570px) {
   button div {
     display: none;
   }
 }
-
-
