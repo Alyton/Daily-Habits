@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto <strong>Dayle Habits</strong> foi desolvido para mantermos uma rotina constante, nos impondo a criarmos hábitos diários.
+O projeto <strong>Dayle Habits</strong> foi desenvolvido para mantermos uma rotina constante, nos impondo a criarmos hábitos diários.
 <br><br>
 
 ## 🔖 Layout
