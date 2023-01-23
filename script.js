@@ -15,11 +15,11 @@ function add() {
   const dayExist = nlwSetup.dayExists(today)
 
   if (dayExist) {
-    alert("Dia já registrado!")
+    // alert("Dia já registrado!")
     return
   }
 
-  alert("Registrado com sucesso.")
+  // alert("Registrado com sucesso.")
   nlwSetup.addDay(today)
 }
 
@@ -38,3 +38,23 @@ const data = JSON.parse(localStorage.getItem("DayleProject@habits")) || {}
 // setData espera um objeto
 nlwSetup.setData(data)
 nlwSetup.load()
+
+
+// Popup//
+
+const buttonForPopup = document.querySelector("button")
+const popup = document.querySelector(".popup-wrapper")
+
+buttonForPopup.addEventListener("click", () => {
+  popup.style.display = "flex"
+})
+
+popup.addEventListener("click", () => {
+  const classNameOfClickedElement = event.target.classList[0]
+  const className = ["popup-close", "popup-link", "popup-wrapper"]
+  const shouldCLosePopup = className.some(className => className === classNameOfClickedElement)
+
+  if (shouldCLosePopup) {
+    popup.style.display = "none"
+  }
+})
