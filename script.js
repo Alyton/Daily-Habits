@@ -39,7 +39,6 @@ const data = JSON.parse(localStorage.getItem("DayleProject@habits")) || {}
 nlwSetup.setData(data)
 nlwSetup.load()
 
-
 // Popup//
 
 const buttonForPopup = document.querySelector("button")
@@ -52,7 +51,9 @@ buttonForPopup.addEventListener("click", () => {
 popup.addEventListener("click", () => {
   const classNameOfClickedElement = event.target.classList[0]
   const className = ["popup-close", "popup-link", "popup-wrapper"]
-  const shouldCLosePopup = className.some(className => className === classNameOfClickedElement)
+  const shouldCLosePopup = className.some(
+    (className) => className === classNameOfClickedElement
+  )
 
   if (shouldCLosePopup) {
     popup.style.display = "none"

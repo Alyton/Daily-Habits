@@ -107,15 +107,15 @@ form {
 }
 
 .text-place {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   font-family: "Inter";
   font-size: 14px;
   line-height: 18.5px;
   text-align: center;
   color: var(--text-dates-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .days {
@@ -131,15 +131,14 @@ form {
 }
 
 .day div {
-  margin-bottom: 8px;
-
+  text-align: center;
   font-family: "Roboto Mono";
   font-size: 20px;
   line-height: 125%;
 
-  color: var(--text-dates-color);
+  margin-bottom: 8px;
 
-  text-align: center;
+  color: var(--text-dates-color);
 }
 
 input {
@@ -164,9 +163,11 @@ input:checked {
 /* popup do button */
 .popup-wrapper {
   background-color: rgba(0, 0, 0, 0.5);
+
   position: fixed;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
 
@@ -178,18 +179,20 @@ input:checked {
 }
 
 .popup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #500041;
   color: #fff;
   font-family: "Inter";
   text-align: center;
+
   width: 500px;
   height: 200px;
   padding: 20px;
   border-radius: 30px;
-  background: #500041;
-  position: relative;
+   position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup a {
@@ -210,26 +213,30 @@ input:checked {
   justify-content: center;
 }
 
-.popup-close{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.popup-close {
   text-align: center;
   border-radius: 50px;
   color: #c0bec0;
+  font-size: 15px;
+  background-color: #cd01c0;
+  border: 2px solid #820079;
+
+  width: 30px;
+  height: 25px;
+
   position: absolute;
   top: 5px;
   right: 30px;
   cursor: pointer;
-  font-size: 15px;
-  width: 25px;
-  height: 25px;
-  border: 2px solid #820079;
 
-  transition: all .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s;
 }
 
-.popup-close:hover{
+.popup-close:hover {
   --webkit-transform: scale(1.1);
   transform: scale(1.1);
   color: rgb(112, 110, 110);
@@ -239,5 +246,26 @@ input:checked {
 @media (max-width: 570px) {
   button div {
     display: none;
+  }
+}
+
+@media (max-width: 570px) {
+  .popup {
+    font-size: 12px;
+    width: 350px;
+    height: 200px;
+  }
+  .popup a {
+    font-size: 15px;
+
+    width: 250px;
+    height: 35px;
+  }
+  .popup-close {
+    font-size: 12px;
+
+    margin-top: 5px;
+    width: 25px;
+    height: 20px;
   }
 }
